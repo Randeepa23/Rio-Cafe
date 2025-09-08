@@ -6,6 +6,15 @@ import { Sparkles } from "@/components/ui/sparkles";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(false);
+
+  const dynamicTexts = [
+    "A Culinary Journey at Rio Cafe",
+    "Where Taste Meets Excellence",
+    "Experience Local Flavors",
+    "Taste the Magic of Rio Cafe"
+  ];
 
   const uberEatsUrl = (import.meta.env.VITE_UBER_EATS_URL as string | undefined)
     ?? "https://www.ubereats.com/lk/store/rio-cafe-negombo/G_SBflqwVuyswJYNgM7z2Q?srsltid=AfmBOoqn3kZV0gf4xLytSWZ9-KEyYY0NERJLcIgOpD9_GlNhDt7BD35du";
@@ -15,6 +24,29 @@ export function HeroSection() {
     const timer = setTimeout(() => setIsLoaded(true), 100);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    // Text rotation effect
+    const textTimer = setInterval(() => {
+      setIsTyping(true);
+      setTimeout(() => {
+        setCurrentTextIndex((prev) => (prev + 1) % dynamicTexts.length);
+        setIsTyping(false);
+      }, 500);
+    }, 4000);
+
+    return () => clearInterval(textTimer);
+  }, [dynamicTexts.length]);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   // Parallax state for background
   const [parallaxY, setParallaxY] = useState(0);
@@ -72,6 +104,28 @@ export function HeroSection() {
         <div className="absolute left-1/2 -translate-x-1/2 top-40 w-72 h-36 pointer-events-none">
           <Sparkles count={28} className="relative w-full h-full" />
         </div>
+        {/* Logo and Brand removed per request */}
+
+        {/* Dynamic Main Headline */}
+        <div className={`mb-6 transition-all duration-1000 delay-500 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+        }`}>
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white mb-4 leading-tight text-glow">
+            <span className="inline-block">
+              {dynamicTexts[currentTextIndex].split(' ').map((word, index) => (
+                <span
+                  key={index}
+                  className={`inline-block mr-4 transition-all duration-500 ${
+                    isTyping ? 'opacity-50 scale-95' : 'opacity-100 scale-100'
+                  }`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {word}
+                </span>
+              ))}
+            </span>
+          </h1>
+        </div>
 
         {/* Animated Sub-headline */}
         <div className={`mb-12 transition-all duration-1000 delay-700 ${
@@ -84,16 +138,16 @@ export function HeroSection() {
 
         {/* Enhanced CTA Buttons */}
         <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-900 ${
-        isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-        <button 
-        onClick={() => window.location.href = '/menu'}  {/* Changed from '/Menu' to '/menu' */}
-        className="group bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden"
-        >
-        <span className="relative z-10">Explore Our Menu</span>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FF8C42] to-[#FF6B35] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-        </button>
+          <button 
+            onClick={() => scrollToSection('menu-showcase')}
+            className="group bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden"
+          >
+            <span className="relative z-10">Explore Our Menu</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FF8C42] to-[#FF6B35] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+          </button>
           
           {/* Uber Eats button intentionally removed from hero */}
         </div>
@@ -120,6 +174,8 @@ export function HeroSection() {
           ))}
         </div>
       </div>
+
+      {/* Scroll indicator removed per request */}
 
       {/* Floating Elements */}
       <div className={`absolute inset-0 pointer-events-none transition-all duration-2000 delay-500 ${
