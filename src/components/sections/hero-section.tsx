@@ -82,13 +82,15 @@ export function HeroSection() {
           <Sparkles count={28} className="relative w-full h-full" />
         </div>
 
-        {/* Main Headline */}
+        {/* Logo and Brand removed per request */}
+
+        {/* Dynamic Main Headline */}
         <div className={`mb-6 transition-all duration-1000 delay-500 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white mb-4 leading-tight text-glow">
             <span className="inline-block">
-              Rio Cafe
+              {/* Empty headline - text removed as requested */}
             </span>
           </h1>
         </div>
