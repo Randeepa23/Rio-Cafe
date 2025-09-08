@@ -87,7 +87,7 @@ export function HeroSection() {
         isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
         <button 
-        onClick={() => window.location.href = '/Menu'}
+        onClick={() => window.location.href = '/menu'}  {/* Changed from '/Menu' to '/menu' */}
         className="group bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden"
         >
         <span className="relative z-10">Explore Our Menu</span>
