@@ -16,16 +16,6 @@ export function HeroSection() {
     return () => clearTimeout(timer);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
-
   // Parallax state for background
   const [parallaxY, setParallaxY] = useState(0);
   useEffect(() => {
@@ -104,15 +94,8 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#FF8C42] to-[#FF6B35] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
           </button>
-
-          <button 
-            onClick={() => window.location.href = '/About'}
-            className="group bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden"
-          >
-            <span className="relative z-10">Learn More About Us</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#FF8C42] to-[#FF6B35] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-          </button>
+          
+          {/* Uber Eats button intentionally removed from hero */}
         </div>
 
         {/* Feature Highlights */}
