@@ -32,7 +32,7 @@ import chickenCroissantCombo from "@/assets/Bakery Products/Chicken Croissant Co
 import chickenNuggetsBurger from "@/assets/Bakery Products/Chicken nuggets burger 200.jpg";
 import chickenPastry from "@/assets/Bakery Products/chicken pastry 150.png";
 import chickenPatties from "@/assets/Bakery Products/chicken patties 100.png";
-import chickenSubmarine from "@/assets/Bakery Products/Chicken submarine 450.jpg";
+import chickenSubmarine from "@/assets/Bakery Products/Chicken Submarine 450.jpg";
 import crispyChickenBurger from "@/assets/Bakery Products/Chrispy Chicken burger 350.jpg";
 import crispyPrawnsBun from "@/assets/Bakery Products/Chrispy Prawns 250.jpg";
 import creamyVegSaladBun from "@/assets/Bakery Products/Creamy Veg 130.jpg";
