@@ -11,19 +11,10 @@ export function HeroSection() {
     ?? "https://www.ubereats.com/lk/store/rio-cafe-negombo/G_SBflqwVuyswJYNgM7z2Q?srsltid=AfmBOoqn3kZV0gf4xLytSWZ9-KEyYY0NERJLcIgOpD9_GlNhDt7BD35du";
 
   useEffect(() => {
+    // Trigger initial animation
     const timer = setTimeout(() => setIsLoaded(true), 100);
     return () => clearTimeout(timer);
   }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
 
   // Parallax state for background
   const [parallaxY, setParallaxY] = useState(0);
@@ -82,19 +73,6 @@ export function HeroSection() {
           <Sparkles count={28} className="relative w-full h-full" />
         </div>
 
-        {/* Logo and Brand removed per request */}
-
-        {/* Dynamic Main Headline */}
-        <div className={`mb-6 transition-all duration-1000 delay-500 ${
-          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-        }`}>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white mb-4 leading-tight text-glow">
-            <span className="inline-block">
-              {/* Empty headline - text removed as requested */}
-            </span>
-          </h1>
-        </div>
-
         {/* Animated Sub-headline */}
         <div className={`mb-12 transition-all duration-1000 delay-700 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
@@ -104,12 +82,12 @@ export function HeroSection() {
           </p>
         </div>
 
-        {/* Enhanced CTA Button */}
+        {/* Enhanced CTA Buttons */}
         <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-900 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <button 
-            onClick={() => scrollToSection('menu-showcase')}
+            onClick={() => window.location.href = '/menu'}
             className="group bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden"
           >
             <span className="relative z-10">Explore Our Menu</span>
