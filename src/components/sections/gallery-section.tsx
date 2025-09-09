@@ -105,7 +105,7 @@ export function GallerySection({ showViewAllButton = false, limit, excludeAlts }
         {/* View Full Gallery CTA (configurable) */}
         {showViewAllButton && (
           <div className="text-center mt-12">
-            <a href="/gallery" className="inline-block bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <a href="/gallery.html" className="inline-block bg-[#FF8C42] hover:bg-[#FF8C42]/90 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
               View Full Gallery
             </a>
           </div>
