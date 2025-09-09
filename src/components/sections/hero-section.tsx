@@ -120,24 +120,6 @@ export function HeroSection() {
             ))}
           </div>
         </div>
-
-        {/* Floating Elements */}
-        <div className={`absolute inset-0 pointer-events-none transition-all duration-2000 delay-500 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <div className="absolute top-20 left-10 animate-float-slow">
-            <div className="text-4xl drop-shadow-lg">🍕</div>
-          </div>
-          <div className="absolute top-40 right-20 animate-float-slow" style={{ animationDelay: '1s' }}>
-            <div className="text-4xl drop-shadow-lg">🍰</div>
-          </div>
-          <div className="absolute bottom-40 left-20 animate-float-slow" style={{ animationDelay: '2s' }}>
-            <div className="text-4xl drop-shadow-lg">☕</div>
-          </div>
-          <div className="absolute bottom-60 right-10 animate-float-slow" style={{ animationDelay: '3s' }}>
-            <div className="text-4xl drop-shadow-lg">🥐</div>
-          </div>
-        </div>
       </section>
   );
 }
