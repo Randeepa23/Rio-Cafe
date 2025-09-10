@@ -57,6 +57,7 @@ export function Navigation() {
               { name: "Menu", href: "/menu" },
               { name: "About Us", href: "/about" },
               { name: "Gallery", href: "/gallery" },
+              { name: "Outlets", href: "/outlets" },
               { name: "Contact", href: "/contact" }
             ].map((item) => (
               <Link
@@ -182,6 +183,7 @@ export function Navigation() {
                   { name: "Menu", href: "/menu" },
                   { name: "About Us", href: "/about" },
                   { name: "Gallery", href: "/gallery" },
+                  { name: "Outlets", href: "/outlets" },
                   { name: "Contact", href: "/contact" }
                 ].map((item) => (
                   <Link
