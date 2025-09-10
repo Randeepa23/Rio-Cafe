@@ -57,7 +57,7 @@ const dishes: Dish[] = [
     awards: ["Seasonal Favorite"],
     prices: [
       { size: "Large", price: "Rs. 4500" },
-      { size: "Small", price: "Rs. 3599" },
+      { size: "Small", price: "Rs. 3500" },
       { size: "Mini", price: "Rs. 2800" }
     ]
   },
