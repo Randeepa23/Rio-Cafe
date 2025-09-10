@@ -243,11 +243,6 @@ export default function Contact() {
                           <a href={b.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent underline-offset-2 hover:underline">
                             {b.name}
                           </a>
-                          {b.isMain && (
-                            <span className="ml-2 inline-block text-[10px] uppercase tracking-wide bg-[#06C167]/15 text-[#0A2342] px-2 py-0.5 rounded-full border border-[#06C167]/30">
-                              Main Branch
-                            </span>
-                          )}
                         </li>
                       ))}
                     </ol>
@@ -268,11 +263,6 @@ export default function Contact() {
                                 <span>{b.name}</span>
                               </div>
                             </div>
-                            {b.isMain && (
-                              <span className="absolute top-2 left-2 text-[10px] uppercase tracking-wide bg-[#06C167] text-white px-2 py-0.5 rounded-full shadow">
-                                Main
-                              </span>
-                            )}
                           </div>
                           <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors" />
                         </a>
