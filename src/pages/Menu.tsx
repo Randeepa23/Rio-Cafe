@@ -49,7 +49,7 @@ import strawberryBubbleTea from "@/assets/beverages/strawberry-bubble-tea.jpg";
 import vanilaMilkshake from "@/assets/beverages/vanilla-milkshake.jpg";
 import iceCoffeeBubbleTea from "@/assets/beverages/ice-coffee-bubble-tea.jpg";
 import mangoBubbleTea from "@/assets/beverages/mango-bubble-tea.jpg";
-import cappuccino from "@/assets/beverages/Cappuccino rs400.jpg";
+import cappuccino from "@/assets/beverages/cappuccino1.jpg";
 import avocadoMilkshake from "@/assets/beverages/Avacado Milk Shake  350.jpg";
 import bananaMilkshake from "@/assets/beverages/banana milk shake rs350.png";
 import chocolateMilkshakeBoba from "@/assets/beverages/chocolate milkshake 800.jpg";
@@ -62,6 +62,10 @@ import mangoFalooda from "@/assets/beverages/mango falooda 350.png";
 import mangoLassi from "@/assets/beverages/Mango Lassi 400.jpg";
 import nellyFalooda from "@/assets/beverages/nelly falooda 300.png";
 import sweetLassi from "@/assets/beverages/Sweet Lassi 300.jpg";
+import passionFruitJuice from "@/assets/beverages/passion fruit juice 300.jpg";
+import limeJuice from "@/assets/beverages/lime juice 250.jpg";
+import orangeJuice from "@/assets/beverages/orange juice 300.jpg";
+import watermelonJuice from "@/assets/beverages/watermelon juice 300.jpg";
 
 import { useState } from "react";
 
@@ -367,6 +371,38 @@ const beverages: MenuItem[] = [
     image: cappuccino,
     price: "Rs. 400",
     tags: ["Coffee", "Classic"]
+  },
+  {
+    id: "beverage-passion-fruit-juice",
+    name: "Passion Fruit Juice",
+    description: "Refreshing tropical passion fruit juice with a perfect balance of sweet and tart.",
+    image: passionFruitJuice,
+    price: "Rs. 300",
+    tags: ["Tropical", "Fresh"]
+  },
+  {
+    id: "beverage-lime-juice",
+    name: "Lime Juice",
+    description: "Fresh and zesty lime juice, perfectly chilled for a refreshing citrus experience.",
+    image: limeJuice,
+    price: "Rs. 250",
+    tags: ["Citrus", "Refreshing"]
+  },
+  {
+    id: "beverage-orange-juice",
+    name: "Orange Juice",
+    description: "Freshly squeezed orange juice, rich in vitamin C and natural sweetness.",
+    image: orangeJuice,
+    price: "Rs. 300",
+    tags: ["Vitamin C", "Fresh"]
+  },
+  {
+    id: "beverage-watermelon-juice",
+    name: "Watermelon Juice",
+    description: "Cool and refreshing watermelon juice, perfect for hot days and natural hydration.",
+    image: watermelonJuice,
+    price: "Rs. 300",
+    tags: ["Hydrating", "Fresh"]
   }
 ];
 
