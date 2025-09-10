@@ -377,9 +377,9 @@ const initialCakes: MenuItem[] = [
     description: "Light and fluffy blueberry-flavored cake layers with fresh cream.",
     image: blueberryGateau,
     prices: [
-      { size: "Large", price: "Rs. 2500" },
-      { size: "Small", price: "Rs. 1800" },
-      { size: "Mini", price: "Rs. 1200" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Signature", "Fresh Cream"]
   },
@@ -389,9 +389,9 @@ const initialCakes: MenuItem[] = [
     description: "A delightful combination of vanilla sponge and rich cream.",
     image: delightGateau,
     prices: [
-      { size: "Large", price: "Rs. 2200" },
-      { size: "Small", price: "Rs. 1600" },
-      { size: "Mini", price: "Rs. 1000" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Popular", "Classic"]
   },
@@ -401,9 +401,9 @@ const initialCakes: MenuItem[] = [
     description: "Tropical pineapple-flavored cake with fresh fruit pieces.",
     image: pineappleGateau,
     prices: [
-      { size: "Large", price: "Rs. 2300" },
-      { size: "Small", price: "Rs. 1700" },
-      { size: "Mini", price: "Rs. 1100" }
+      { size: "Large", price: "Rs. 4200" },
+      { size: "Small", price: "Rs. 3200" },
+      { size: "Mini", price: "Rs. 2500" }
     ],
     tags: ["Fruity", "Fresh"]
   },
@@ -413,9 +413,9 @@ const initialCakes: MenuItem[] = [
     description: "Traditional gateau with rich chocolate and cream layers.",
     image: classicGateau,
     prices: [
-      { size: "Large", price: "Rs. 2000" },
-      { size: "Small", price: "Rs. 1500" },
-      { size: "Mini", price: "Rs. 900" }
+      { size: "Large", price: "Rs. 4800" },
+      { size: "Small", price: "Rs. 3800" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Classic", "Best Seller"]
   },
@@ -425,9 +425,9 @@ const initialCakes: MenuItem[] = [
     description: "Multiple layers of rich chocolate cake with ganache.",
     image: chocolateLayerCake,
     prices: [
-      { size: "Large", price: "Rs. 2400" },
-      { size: "Small", price: "Rs. 1800" },
-      { size: "Mini", price: "Rs. 1200" }
+      { size: "Large", price: "Rs. 4200" },
+      { size: "Small", price: "Rs. 3200" },
+      { size: "Mini", price: "Rs. 2500" }
     ],
     tags: ["Premium", "Rich"]
   },
@@ -517,9 +517,9 @@ const initialCakes: MenuItem[] = [
     description: "Fresh strawberry-topped gateau with cream layers.",
     image: strawberryGateau,
     prices: [
-      { size: "Large", price: "Rs. 2600" },
-      { size: "Small", price: "Rs. 1900" },
-      { size: "Mini", price: "Rs. 1300" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Premium", "Fresh Fruit"]
   },
@@ -529,9 +529,9 @@ const initialCakes: MenuItem[] = [
     description: "Elegant white chocolate gateau with cream layers.",
     image: whiteChocolateGateau,
     prices: [
-      { size: "Large", price: "Rs. 2400" },
-      { size: "Small", price: "Rs. 1800" },
-      { size: "Mini", price: "Rs. 1200" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Premium", "White Chocolate"]
   },
@@ -541,9 +541,9 @@ const initialCakes: MenuItem[] = [
     description: "Rich butterscotch-flavored gateau with caramel.",
     image: butterscotchGateau,
     prices: [
-      { size: "Large", price: "Rs. 2300" },
-      { size: "Small", price: "Rs. 1700" },
-      { size: "Mini", price: "Rs. 1100" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Special", "Caramel"]
   },
@@ -553,9 +553,9 @@ const initialCakes: MenuItem[] = [
     description: "Classic chocolate gateau with rich ganache.",
     image: chocolateGateau,
     prices: [
-      { size: "Large", price: "Rs. 2200" },
-      { size: "Small", price: "Rs. 1600" },
-      { size: "Mini", price: "Rs. 1000" }
+      { size: "Large", price: "Rs. 4500" },
+      { size: "Small", price: "Rs. 3500" },
+      { size: "Mini", price: "Rs. 2800" }
     ],
     tags: ["Classic", "Rich"]
   }
