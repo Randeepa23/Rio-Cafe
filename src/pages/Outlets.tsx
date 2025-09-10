@@ -16,10 +16,8 @@ const outlets = [
     name: "DANKOTUWA",
     address: "Nattandiya Road, Dankotuwa",
     phone: "074 3279384",
-    isMain: true,
     mapUrl: "https://www.google.com/maps/place/Rio+Cafe/@7.301209,79.8817011,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2e96cdbb8cba1:0xbef884207647b8e0!8m2!3d7.301209!4d79.884276!16s%2Fg%2F11h52qk5bc?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
-    image: riocafeInside,
-    hours: "11:00 AM – 11:00 PM • Bar until 12:00 AM"
+    image: riocafeInside
   },
   {
     id: "kochchikade",
@@ -27,8 +25,7 @@ const outlets = [
     address: "Chilaw Road, Daluwakotuwa, Kochchikade",
     phone: "076 9388947",
     mapUrl: "https://www.google.com/maps/place/Rio+Cafe/@7.2585407,79.8534738,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2e9a2ebd922ef:0x6ef3a591ea2425de!8m2!3d7.2585407!4d79.8560487!16s%2Fg%2F11ky4465ks?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
-    image: riocafeInside2,
-    hours: "11:00 AM – 11:00 PM • Bar until 12:00 AM"
+    image: riocafeInside2
   },
   {
     id: "negombo",
@@ -36,8 +33,7 @@ const outlets = [
     address: "Galkanda Junction, Colombo Road, Negombo",
     phone: "076 0683630",
     mapUrl: "https://www.google.com/maps/place/Rio+Cafe/@7.1978448,79.7784283,13z/data=!4m10!1m2!2m1!1srio+cafe+negombo!3m6!1s0x3ae2ef6c153b5cad:0xbc66cd859730a820!8m2!3d7.1978448!4d79.854646!15sChByaW8gY2FmZSBuZWdvbWJvIgOIAQFaEiIQcmlvIGNhZmUgbmVnb21ib5IBBGNhZmWqAXAKDS9nLzExa3k0NDY1a3MKDC9nLzFoZF84cmgwMwoKL20vMDNneDl2ZhABKgwiCHJpbyBjYWZlKAAyHxABIhu8nKS721GBbFZv33KO0Lw07MiVyIc4VZtNfgoyFBACIhByaW8gY2FmZSBuZWdvbWJv4AEA!16s%2Fg%2F11t9wlcxtc?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
-    image: riocafeLobby,
-    hours: "11:00 AM – 11:00 PM • Bar until 12:00 AM"
+    image: riocafeLobby
   },
   {
     id: "wennappuwa",
@@ -45,8 +41,7 @@ const outlets = [
     address: "Negombo Road, Wennappuwa",
     phone: "077 7139038",
     mapUrl: "https://www.google.com/maps/place/Rio+Cafe/@7.3344055,79.8419375,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2c30006655f17:0xc28ba05e9be922ee!8m2!3d7.3344055!4d79.8445124!16s%2Fg%2F11lnmtr2f2?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
-    image: riocafeFoodArea,
-    hours: "11:00 AM – 11:00 PM • Bar until 12:00 AM"
+    image: riocafeFoodArea
   }
 ];
 
