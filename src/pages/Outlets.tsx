@@ -1,10 +1,10 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { GlassCard } from "@/components/ui/glass-card";
-import { MapPin, Phone, Clock } from "phosphor-react";
+import { MapPin, Phone } from "phosphor-react";
 import { AnimatedOrbs } from "@/components/ui/animated-orbs";
 import { Sparkles } from "@/components/ui/sparkles";
-import outsideRio from "@/assets/outside rio.jpg";
+import screenshotImage from "@/assets/Screenshot 2025-08-28 193748.png";
 import riocafeInside from "@/assets/rio cafe inside.jpg";
 import riocafeInside2 from "@/assets/rio cafe inside 2.jpg";
 import riocafeLobby from "@/assets/RIOCAFELOBBY.webp";
@@ -16,6 +16,7 @@ const outlets = [
     name: "DANKOTUWA",
     address: "Nattandiya Road, Dankotuwa",
     phone: "074 3279384",
+    isMain: true,
     mapUrl: "https://www.google.com/maps/place/Rio+Cafe/@7.301209,79.8817011,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2e96cdbb8cba1:0xbef884207647b8e0!8m2!3d7.301209!4d79.884276!16s%2Fg%2F11h52qk5bc?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
     image: riocafeInside
   },
@@ -54,7 +55,7 @@ export default function Outlets() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${outsideRio}')` }}
+          style={{ backgroundImage: `url('${screenshotImage}')` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <AnimatedOrbs className="absolute inset-0" />
@@ -153,7 +154,7 @@ export default function Outlets() {
                   </div>
 
                   {/* Phone */}
-                  <div className="flex items-center mb-4">
+                  <div className="flex items-center mb-6">
                     <Phone size={20} className="text-[#CD7F32] mr-3 flex-shrink-0" weight="light" />
                     <div>
                       <a 
@@ -162,16 +163,6 @@ export default function Outlets() {
                       >
                         {outlet.phone}
                       </a>
-                    </div>
-                  </div>
-
-                  {/* Hours */}
-                  <div className="flex items-start mb-6">
-                    <Clock size={20} className="text-[#CD7F32] mt-1 mr-3 flex-shrink-0" weight="light" />
-                    <div>
-                      <p className="text-gray-600 text-sm">
-                        Mon–Sun: {outlet.hours}
-                      </p>
                     </div>
                   </div>
 
