@@ -11,6 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 import Gallery from "./pages/Gallery";
 import Menu from "./pages/Menu";
+import Outlets from "./pages/Outlets";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/menu" element={<Menu />} />
+            <Route path="/outlets" element={<Outlets />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
