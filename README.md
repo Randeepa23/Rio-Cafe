@@ -1,73 +1,196 @@
-# Welcome to your Lovable project
+# ☕ Rio Cafe
 
-## Project info
+> **Happy Tea Time. Delicious moments, refreshing drinks, and great food.**
 
-**URL**: https://lovable.dev/projects/5fb5e5b1-19c1-41a8-b169-d9038273353c
+Rio Cafe is a modern and visually engaging website developed to establish and strengthen the digital presence of **Rio Cafe**. The platform provides customers with an easy way to explore the cafe, discover its offerings, and connect with the brand through a responsive and user-friendly online experience.
 
-## How can I edit this code?
+## 🌐 Live Website
 
-There are several ways of editing your application.
+**Visit Rio Cafe:** https://riocafe.lk/
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5fb5e5b1-19c1-41a8-b169-d9038273353c) and start prompting.
+## 📖 About the Project
 
-Changes made via Lovable will be committed automatically to this repo.
+This project was developed as a modern website for **Rio Cafe**, focusing on creating an attractive digital experience that reflects the brand's identity and atmosphere.
 
-**Use your preferred IDE**
+The website is designed to provide visitors with a smooth and engaging experience while allowing them to explore the cafe and its offerings from any device.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The project focuses on combining a visually appealing interface with responsive design and intuitive navigation to create a strong online presence for the business.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Key Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* ☕ Modern and visually appealing user interface
+* 📱 Fully responsive design for desktop, tablet, and mobile devices
+* 🍽️ Cafe and food-related content presentation
+* 🧋 Beverage and menu showcase
+* 🖼️ High-quality visual content and branding
+* 🧭 Smooth and intuitive navigation
+* 📞 Easy access to contact and business information
+* ⚡ Fast and user-friendly browsing experience
+* 🌐 Professional online presence for the brand
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Technologies Used
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+This project was developed using modern web technologies.
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Development & Design
+
+* Responsive Web Design
+* Modern UI/UX Principles
+* Mobile-Friendly Design
+* Interactive Web Components
+
+> **Note:** Update this section with the exact technologies used in your project, such as React, Next.js, Tailwind CSS, Bootstrap, PHP, Laravel, Node.js, or any other frameworks and technologies used.
+
+---
+
+## 📸 Project Preview
+
+### 🌐 Live Website
+
+**Live Demo:** https://riocafe.lk/
+
+You can add screenshots of the website to this repository for a better project presentation.
+
+```text
+screenshots/
+├── homepage.png
+├── menu.png
+├── about.png
+└── contact.png
+```
+
+Then display them in the README:
+
+```markdown
+![Rio Cafe Homepage](./screenshots/homepage.png)
+```
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally, follow these steps.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd YOUR-REPOSITORY
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+> The installation and running commands may vary depending on the technologies and framework used in the project.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📂 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+A typical project structure may look like this:
 
-## What technologies are used for this project?
+```text
+Rio-Cafe/
+│
+├── public/                  # Public files and static assets
+│
+├── src/                     # Main source code
+│   ├── components/          # Reusable UI components
+│   ├── pages/               # Website pages
+│   ├── assets/              # Images, icons, and other assets
+│   └── styles/              # CSS and styling files
+│
+├── package.json
+└── README.md
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 Project Objectives
 
-## How can I deploy this project?
+The main objectives of this project are:
 
-Simply open [Lovable](https://lovable.dev/projects/5fb5e5b1-19c1-41a8-b169-d9038273353c) and click on Share -> Publish.
+* Create a professional online presence for Rio Cafe
+* Present the brand in a modern and visually appealing way
+* Provide customers with easy access to cafe information
+* Improve accessibility across desktop and mobile devices
+* Create a smooth and user-friendly browsing experience
+* Strengthen the digital identity of the business
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🌟 Future Improvements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Potential future improvements include:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+* 📋 Interactive digital menu
+* 🛒 Online ordering functionality
+* 📦 Order tracking
+* 💳 Online payment integration
+* 🔐 Customer accounts and authentication
+* ⭐ Customer reviews and ratings
+* 📅 Table reservation system
+* 🔔 Order and promotional notifications
+* 🎁 Loyalty and rewards system
+* 📊 Admin dashboard and analytics
+
+---
+
+## 👨‍💻 Developer
+
+**Randeepa Ariyawansa**
+
+Software / Computer Engineering Student passionate about building modern and meaningful digital solutions.
+
+### Areas of Interest
+
+* 💻 Web Development
+* 📱 Mobile Application Development
+* 🤖 Artificial Intelligence
+* 🧠 Machine Learning
+* 🎨 UI/UX Design
+* ⚙️ Software Engineering
+
+---
+
+## 📄 License
+
+This project was developed for **Rio Cafe**.
+
+© 2026 Rio Cafe. All rights reserved.
+
+---
+
+<div align="center">
+
+### ☕ Good Coffee • Great Food • Happy Moments
+
+**Designed and developed with ❤️ by Randeepa Ariyawansa**
+
+</div>
